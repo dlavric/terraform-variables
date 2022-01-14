@@ -24,10 +24,7 @@ cd terraform-variables
 - Run `terraform init`, to download any external dependency
 ```shell
 terraform init
-```
 
-This is the output of initializing the Terraform code:
-```shell
 Initializing the backend...
 
 Initializing provider plugins...
@@ -53,10 +50,7 @@ commands will detect it and remind you to do so if necessary.
 - Apply the changes with Terraform
 ```shell
 terraform apply
-```
 
-This is the output for applying the changes:
-```shell
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
 
@@ -93,21 +87,15 @@ var = "griffon"
 - To confirm the resources that have been created
 ```shell
 terraform state list
-```
 
-Output is:
-```shell
-random_pet.var
+> random_pet.var
 ```
 
 
 - Destroy the instance
 ```shell
 terraform destroy
-```
 
-This is how it is supposed to look after destroying the changes:
-```shell
 random_pet.var: Refreshing state... [id=griffon]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
