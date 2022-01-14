@@ -21,7 +21,7 @@ git clone git@github.com:dlavric/terraform-variables.git
 cd terraform-variables
 ```
 
-- Run `terraform init`, to download any external dependency
+- Initialize Terraform by running `terraform init` to download any external dependencies
 ```shell
 terraform init
 
