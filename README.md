@@ -87,8 +87,10 @@ var = "griffon"
 - To confirm the resources that have been created we can use `terraform state list`
 ```shell
 terraform state list
+```
 
-> random_pet.var
+```console
+random_pet.var
 ```
 
 
