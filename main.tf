@@ -8,5 +8,5 @@ resource "random_pet" "var" {
 }
 
 output "var" {
-    value = random_pet.var.length
+    value = random_pet.var.id
 }
