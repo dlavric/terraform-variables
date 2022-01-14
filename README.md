@@ -47,7 +47,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-- Apply the changes with Terraform
+- Apply the changes with `terraform apply`
 ```shell
 terraform apply
 
@@ -84,7 +84,7 @@ Outputs:
 var = "griffon"
 ```
 
-- To confirm the resources that have been created
+- To confirm the resources that have been created we can use `terraform state list`
 ```shell
 terraform state list
 
@@ -92,7 +92,7 @@ terraform state list
 ```
 
 
-- Destroy the instance
+- Destroy the instance b running `terraform destroy`
 ```shell
 terraform destroy
 
