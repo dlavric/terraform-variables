@@ -88,7 +88,6 @@ var = "griffon"
 ```shell
 terraform state list
 ```
-
 ```console
 random_pet.var
 ```
