@@ -72,7 +72,7 @@ Terraform will perform the following actions:
 Plan: 1 to add, 0 to change, 0 to destroy.
 
 Changes to Outputs:
-  + var = 1
+  + var = (known after apply)
 
 Do you want to perform these actions?
   Terraform will perform the actions described above.
@@ -81,13 +81,13 @@ Do you want to perform these actions?
   Enter a value: yes
 
 random_pet.var: Creating...
-random_pet.var: Creation complete after 0s [id=mouse]
+random_pet.var: Creation complete after 0s [id=griffon]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-var = 1
+var = "griffon"
 ```
 
 - To confirm the resources that have been created
@@ -108,7 +108,7 @@ terraform destroy
 
 This is how it is supposed to look after destroying the changes:
 ```shell
-random_pet.var: Refreshing state... [id=mouse]
+random_pet.var: Refreshing state... [id=griffon]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   - destroy
@@ -117,7 +117,7 @@ Terraform will perform the following actions:
 
   # random_pet.var will be destroyed
   - resource "random_pet" "var" {
-      - id        = "mouse" -> null
+      - id        = "griffon" -> null
       - length    = 1 -> null
       - separator = "-" -> null
     }
@@ -125,7 +125,7 @@ Terraform will perform the following actions:
 Plan: 0 to add, 0 to change, 1 to destroy.
 
 Changes to Outputs:
-  - var = 1 -> null
+  - var = "griffon" -> null
 
 Do you really want to destroy all resources?
   Terraform will destroy all your managed infrastructure, as shown above.
@@ -133,7 +133,7 @@ Do you really want to destroy all resources?
 
   Enter a value: yes
 
-random_pet.var: Destroying... [id=mouse]
+random_pet.var: Destroying... [id=griffon]
 random_pet.var: Destruction complete after 0s
 
 Destroy complete! Resources: 1 destroyed.
